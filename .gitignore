@@ -1,0 +1,11 @@
+﻿# Служебные файлы
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Редакторы и IDE
+.vscode/
+.idea/
+
+# Логи
+*.log
