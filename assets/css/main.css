@@ -104,11 +104,11 @@ svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.6;stroke
 .nav__item--has-sub.is-open>.nav__toggle .chev{transform:rotate(180deg)}
 
 /* выпадающее меню */
-.nav__sub{position:absolute;top:100%;left:0;min-width:300px;padding:var(--s2);border-radius:var(--r-md);
+.nav__sub{position:absolute;top:100%;left:0;min-width:300px;width:max-content;padding:var(--s2);border-radius:var(--r-md);
   background:var(--c-card);border:1px solid var(--c-line);box-shadow:var(--sh-2);
   opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity var(--d-base) var(--ease-out),transform var(--d-base) var(--ease-out),visibility var(--d-base)}
 .nav__item--has-sub:hover>.nav__sub,.nav__item--has-sub:focus-within>.nav__sub,.nav__item--has-sub.is-open>.nav__sub{opacity:1;visibility:visible;transform:none}
-.nav__sub a{display:block;padding:11px 14px;border-radius:var(--r-sm);font-size:14px;font-weight:700;color:var(--c-text-mid);transition:background var(--d-fast),color var(--d-fast)}
+.nav__sub a{display:block;padding:11px 14px;border-radius:var(--r-sm);font-size:14px;font-weight:700;color:var(--c-text-mid);white-space:nowrap;transition:background var(--d-fast),color var(--d-fast)}
 .nav__sub a:hover{background:rgba(255,122,26,.1);color:var(--c-text)}
 
 /* бургер */

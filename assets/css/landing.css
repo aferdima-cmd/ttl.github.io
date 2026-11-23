@@ -62,9 +62,8 @@
 .hero>.wrap{position:relative;z-index:2}
 .hero__orb{position:absolute;width:440px;height:440px;border-radius:50%;right:-140px;top:-120px;border:1px solid rgba(130,83,58,.22);animation:drift 13s ease-in-out infinite;z-index:1}
 .hero__orb::after{content:"";position:absolute;inset:64px;border-radius:50%;border:1px dashed rgba(255,122,26,.4);animation:spin 44s linear infinite}
-.hero__title{font-size:clamp(30px,7.4vw,104px);text-transform:uppercase;letter-spacing:-.04em;line-height:.98;margin:var(--s5) 0 var(--s7);max-width:none;width:100%}
-.hero__title .split-line:nth-child(2)>span{white-space:nowrap}
-.hero__grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s8);align-items:stretch}
+.hero__title{font-size:clamp(26px,6.2vw,82px);text-transform:uppercase;letter-spacing:-.04em;line-height:.98;margin:var(--s5) 0 var(--s7);max-width:none;width:100%}
+.hero__title .split-line:nth-child(2)>span{white-space:nowrap}.hero__grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s8);align-items:stretch}
 .hero__sub{font-size:clamp(21px,2.5vw,34px);text-transform:uppercase;letter-spacing:-.025em;line-height:1.1}
 .hero__sub .t-gold{background:linear-gradient(135deg,#82533A,#C58B5E 50%,#82533A);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero__copy{margin:var(--s5) 0 var(--s6);font-size:clamp(17px,1.55vw,20px);font-weight:600;color:var(--c-brown);max-width:560px}
@@ -385,3 +384,6 @@ section.block:has(+ .free-section){padding-bottom:clamp(36px,5vw,70px)}
 .calc__micro{margin:var(--s4) 0 0;font-size:11.5px;line-height:1.55;color:rgba(42,20,5,.62)}
 @media(max-width:900px){.calc-wrap{grid-template-columns:1fr}}
 @media(max-width:620px){.calc__checks{grid-template-columns:1fr}}
+
+/* H1: на десктопе каждый split-line занимает ровно один ряд (макс. 3 строки) */
+@media(min-width:900px){.hero__title .split-line>span{white-space:nowrap}}
